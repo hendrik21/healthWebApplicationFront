@@ -7,16 +7,18 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 import {MatTableModule} from '@angular/material/table';
 import {MatGridListModule} from "@angular/material/grid-list";
+import { FormComponent } from './form/form.component';
 
 const routes: Routes = [
+  { path: '', component: FormComponent },
   { path: 'results', component: TableComponent },
-  // ... other routes
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    TableComponent
+    TableComponent,
+    FormComponent
   ],
   imports: [
     RouterModule.forRoot(routes),

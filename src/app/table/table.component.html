@@ -1,6 +1,16 @@
-<mat-grid-list cols="2" rowHeight="2:1">
-  <mat-grid-tile>1</mat-grid-tile>
-  <mat-grid-tile>2</mat-grid-tile>
-  <mat-grid-tile>3</mat-grid-tile>
-  <mat-grid-tile>4</mat-grid-tile>
+<h2>Answers</h2>
+<mat-grid-list [cols]="breakpoint" rowHeight="2:0.5" (window:resize)="onResize($event)">
+  <mat-grid-tile><b>Question 1:</b></mat-grid-tile>
+  <mat-grid-tile>{{answer.question1}}</mat-grid-tile>
+  <mat-grid-tile><b>Question 2</b></mat-grid-tile>
+  <mat-grid-tile>{{answer.question2}}</mat-grid-tile>
+  <mat-grid-tile><b>Question 3</b></mat-grid-tile>
+  <mat-grid-tile>{{answer.question3}}</mat-grid-tile>
+  <mat-grid-tile><b>Question 4</b></mat-grid-tile>
+  <mat-grid-tile>{{answer.question4}}</mat-grid-tile>
+  <mat-grid-tile><b>Question 5</b></mat-grid-tile>
+  <mat-grid-tile>{{answer.question5}}</mat-grid-tile>
+  <mat-grid-tile><b>Question 6</b></mat-grid-tile>
+  <mat-grid-tile>{{answer.question6}}</mat-grid-tile>
 </mat-grid-list>
+<h2>Results</h2>

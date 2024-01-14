@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class SummaryService {
-  private apiUrl = 'https://api.dev.maternal.app/user/evaluation/dass-21/results';
+  private apiUrl = '/api';
   private apiKey = '0trQCMsfOuGMb1Mk4ZL92FXrxYr1ZjW8Xnz2TjQ5';
 
   constructor(private http: HttpClient) {}

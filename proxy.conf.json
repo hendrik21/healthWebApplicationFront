@@ -1,0 +1,13 @@
+{
+  "/api": {
+    "target": "https://api.dev.maternal.app",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": { "^/api": "/user/evaluation/dass-21/results" },
+    "logLevel": "debug",
+    "headers": {
+      "x-api-key": "0trQCMsfOuGMb1Mk4ZL92FXrxYr1ZjW8Xnz2TjQ5"
+    }
+  }
+}
+
