@@ -1,0 +1,14 @@
+/* table.component.css */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  background-color: #f3f3f3;
+  width: inherit;
+}
+
+.grid-item {
+  padding: 20px;
+}
+
+
