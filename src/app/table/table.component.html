@@ -1,16 +1,49 @@
-<h2>Answers</h2>
-<mat-grid-list [cols]="breakpoint" rowHeight="2:0.5" (window:resize)="onResize($event)">
-  <mat-grid-tile><b>Question 1:</b></mat-grid-tile>
+<h2>{{answerTitle}}</h2>
+<mat-grid-list [cols]="breakpoint" rowHeight="0.8:0.5" (window:resize)="onResize($event)">
+  <mat-grid-tile><b>{{questionTitle}} 1: {{questionTitle1}}</b></mat-grid-tile>
   <mat-grid-tile>{{answer.question1}}</mat-grid-tile>
-  <mat-grid-tile><b>Question 2</b></mat-grid-tile>
+  <mat-grid-tile><b>{{questionTitle}} 2: {{questionTitle2}}</b></mat-grid-tile>
   <mat-grid-tile>{{answer.question2}}</mat-grid-tile>
-  <mat-grid-tile><b>Question 3</b></mat-grid-tile>
+  <mat-grid-tile><b>{{questionTitle}} 3: {{questionTitle3}}</b></mat-grid-tile>
   <mat-grid-tile>{{answer.question3}}</mat-grid-tile>
-  <mat-grid-tile><b>Question 4</b></mat-grid-tile>
+  <mat-grid-tile><b>{{questionTitle}} 4: {{questionTitle4}}</b></mat-grid-tile>
   <mat-grid-tile>{{answer.question4}}</mat-grid-tile>
-  <mat-grid-tile><b>Question 5</b></mat-grid-tile>
+  <mat-grid-tile><b>{{questionTitle}} 5: {{questionTitle5}}</b></mat-grid-tile>
   <mat-grid-tile>{{answer.question5}}</mat-grid-tile>
-  <mat-grid-tile><b>Question 6</b></mat-grid-tile>
+  <mat-grid-tile><b>{{questionTitle}} 6: {{questionTitle6}}</b></mat-grid-tile>
   <mat-grid-tile>{{answer.question6}}</mat-grid-tile>
 </mat-grid-list>
-<h2>Results</h2>
+<h2>{{resultsTitle}}</h2>
+<mat-grid-list [cols]="breakpoint" rowHeight="0.8:0.5" (window:resize)="onResize($event)">
+  <mat-grid-tile><b>{{summaryTitle}}</b></mat-grid-tile>
+  <mat-grid-tile>{{results.data.userEvaluationDASS21Results.summary}}</mat-grid-tile>
+  <mat-grid-tile><b>{{stressUnitOfMeasureTitle}}</b></mat-grid-tile>
+  <mat-grid-tile>{{results.data.userEvaluationDASS21Results.stressUnitOfMeasure}}</mat-grid-tile>
+  <mat-grid-tile><b>{{stressScoreTitle}}</b></mat-grid-tile>
+  <mat-grid-tile>{{results.data.userEvaluationDASS21Results.stressScore}}</mat-grid-tile>
+  <mat-grid-tile><b>{{depressionDescriptionTitle}}</b></mat-grid-tile>
+  <mat-grid-tile>{{results.data.userEvaluationDASS21Results.depressionDescription}}</mat-grid-tile>
+  <mat-grid-tile><b>{{depressionUnitOfMeasureTitle}}</b></mat-grid-tile>
+  <mat-grid-tile>{{results.data.userEvaluationDASS21Results.depressionUnitOfMeasure}}</mat-grid-tile>
+  <mat-grid-tile><b>{{anxietyDescriptionTitle}}</b></mat-grid-tile>
+  <mat-grid-tile>{{results.data.userEvaluationDASS21Results.anxietyDescription}}</mat-grid-tile>
+  <mat-grid-tile><b>{{descriptionTitle}}</b></mat-grid-tile>
+  <mat-grid-tile>{{results.data.userEvaluationDASS21Results.description}}</mat-grid-tile>
+  <mat-grid-tile><b>{{stressDescriptionTitle}}</b></mat-grid-tile>
+  <mat-grid-tile>{{results.data.userEvaluationDASS21Results.stressDescription}}</mat-grid-tile>
+  <mat-grid-tile><b>{{anxietyScoreTitle}}</b></mat-grid-tile>
+  <mat-grid-tile>{{results.data.userEvaluationDASS21Results.anxietyScore}}</mat-grid-tile>
+  <mat-grid-tile><b>{{depressionScoreTitle}}</b></mat-grid-tile>
+  <mat-grid-tile>{{results.data.userEvaluationDASS21Results.depressionScore}}</mat-grid-tile>
+  <mat-grid-tile><b>{{depressionLabelTitle}}</b></mat-grid-tile>
+  <mat-grid-tile>{{results.data.userEvaluationDASS21Results.depressionLabel}}</mat-grid-tile>
+  <mat-grid-tile><b>{{stressLabelTitle}}</b></mat-grid-tile>
+  <mat-grid-tile>{{results.data.userEvaluationDASS21Results.stressLabel}}</mat-grid-tile>
+  <mat-grid-tile><b>{{takenOnDateTimeTitle}}</b></mat-grid-tile>
+  <mat-grid-tile>{{results.data.userEvaluationDASS21Results.takenOnDateTime}}</mat-grid-tile>
+  <mat-grid-tile><b>{{anxietyLabelTitle}}</b></mat-grid-tile>
+  <mat-grid-tile>{{results.data.userEvaluationDASS21Results.anxietyLabel}}</mat-grid-tile>
+  <mat-grid-tile><b>{{anxietyUnitOfMeasureTitle}}</b></mat-grid-tile>
+  <mat-grid-tile>{{results.data.userEvaluationDASS21Results.anxietyUnitOfMeasure}}</mat-grid-tile>
+</mat-grid-list>
+

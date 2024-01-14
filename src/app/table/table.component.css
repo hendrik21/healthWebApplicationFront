@@ -1,7 +1,10 @@
 /* table.component.css */
 mat-grid-list {
-  padding: 5vw;
-  background: #f3f3f3;;
+  background: #f3f3f3;
+}
+
+mat-grid-tile {
+  background: #f3f3f3;
 }
 
 

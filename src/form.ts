@@ -37,6 +37,7 @@ export const form = {
         {
           "name":"name",
           "type": "text",
+          "hideNumber": true,
           "title": {
             "en": "Name",
             "es": "Nombre",
@@ -45,6 +46,7 @@ export const form = {
         {
           "name":"language",
           "type": "dropdown",
+          "hideNumber": true,
           "title": {
             "en": "language",
             "es": "Idioma",
@@ -62,6 +64,7 @@ export const form = {
         {
           "name":"question1",
           "type": "radiogroup",
+          "hideNumber": true,
           "title": {
             "en": "I found it hard to wind down",
             "es": "Me ha costado mucho descargar la tensión",
@@ -71,6 +74,7 @@ export const form = {
         {
           "name":"question2",
           "type": "radiogroup",
+          "hideNumber": true,
           "title": {
             "en": "I was aware of dryness of my mouth",
             "es": "Me di cuenta que tenía la boca seca",
@@ -85,6 +89,7 @@ export const form = {
         {
           "name":"question3",
           "type": "radiogroup",
+          "hideNumber": true,
           "title": {
             "en": "I couldn't seem to experience any positive feeling at all",
             "es": "No podía sentir ningún sentimiento positivo",
@@ -94,6 +99,7 @@ export const form = {
         {
           "name":"question4",
           "type": "radiogroup",
+          "hideNumber": true,
           "title": {
             "en": "I experienced breathing difficulty (e.g. excessively rapid breathing, breathlessness in the\n" +
               "absence of physical exertion)",
@@ -109,6 +115,7 @@ export const form = {
         {
           "name":"question5",
           "type": "radiogroup",
+          "hideNumber": true,
           "title": {
             "en": "I found it difficult to work up the initiative to do things",
             "es": "Se me hizo difícil tomar la iniciativa para hacer cosas",
@@ -118,6 +125,7 @@ export const form = {
         {
           "name":"question6",
           "type": "radiogroup",
+          "hideNumber": true,
           "title": {
             "en": "I tended to over-react to situations",
             "es": "Reaccioné exageradamente en ciertas situaciones\n",

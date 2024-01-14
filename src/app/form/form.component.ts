@@ -45,22 +45,12 @@ export class FormComponent implements OnInit, AfterViewInit {
       this.surveyService.saveAnswer(answer).subscribe((response) => {
           // Handle the API response here
           console.log('Survey Results:', response);
-          this.router.navigate(['/results'], {queryParams: { answer: JSON.stringify(answer)}});
+          this.router.navigate(['/results'], {queryParams: { answer: JSON.stringify(answer), language: this.model.getQuestionByName('language').value}});
         },
         (error) => {
           // Handle errors
           console.error('Error fetching survey results:', error);
         })
-      /*this.summaryService.getSurveyResults("964f6c4e-930e-407c-8d50-c1505ee65fc4","es_es").subscribe(
-        (response) => {
-          // Handle the API response here
-          console.log('Survey Results:', response);
-        },
-        (error) => {
-          // Handle errors
-          console.error('Error fetching survey results:', error);
-        }
-      );*/
     })
   }
 
